@@ -162,7 +162,7 @@
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/john-njenga-318a24306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="Statement_23_06335.pdf" download class="btn btn2">download CV</a>
+                <a href="#" onclick="showMessage(event)"download class="btn btn2">download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -181,6 +181,12 @@
     </div>
 
     <script src="index.js"></script>
+    <script>
+        function showMessage(event) {
+            event.preventDefault(); // Prevent the download action
+            alert("The CV will be available soon. Stay tuned!");
+        }
+    </script>
     <script>
         var sidemenu = document.getElementById("sidemenu");
 
