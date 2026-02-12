@@ -14,7 +14,7 @@ const modalClose = document.querySelector('.modal-close');
    ======================================== */
 const projectsData = {
     kenswed: {
-        title: 'Kenswed — School Management System',
+        title: 'Kenswed - School Management System',
         image: 'assets/kenswed-dashboard.png',
         alt: 'Kenswed dashboard screenshot',
         description: 'A comprehensive web-based school management system designed to streamline educational administration. Kenswed allows schools to efficiently manage student registration, track exam schedules, enter live results, and generate detailed reports. The system provides an intuitive admin dashboard for staff and real-time access to student performance data.',
