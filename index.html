@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="John Njenga — Full-stack Web Developer & IT Specialist. Building school systems, desktop utilities, and practical web apps.">
-    <meta name="keywords" content="web developer, software engineer, PHP, Java, Kenya, full-stack">
+    <meta name="description" content="John Njenga -Full-stack developer and IT specialist in Nairobi, Kenya, building production platforms like MtaaniFix and SiteGred with Laravel, Azure, and Cloudflare.">
+    <meta name="keywords" content="web developer, software engineer, Laravel, PHP, cloud infrastructure, cybersecurity, Kenya, full-stack developer, Nairobi">
     <meta name="author" content="John Njenga">
-    <meta name="theme-color" content="#0a0a0a">
-    <meta property="og:title" content="John Njenga - Full-stack Developer">
-    <meta property="og:description" content="IT student at KCA University. Specializing in PHP/MySQL backends and secure web systems.">
+    <meta name="theme-color" content="#0B0F14">
+    <meta property="og:title" content="John Njenga -Full-stack Developer & Cloud Infrastructure">
+    <meta property="og:description" content="Final-year IT student at KCA University shipping production systems for the Kenyan market -MtaaniFix, SiteGred, and more.">
     <meta property="og:type" content="website">
-    <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%2064%2064'><rect width='64' height='64' rx='12' fill='%230a0a0a'/><text x='32' y='40' font-family='Arial,%20Helvetica,%20sans-serif' font-size='28' fill='%23ff004f' text-anchor='middle' dominant-baseline='middle' font-weight='800'>JN</text></svg>" type="image/svg+xml">
+    <meta property="og:url" content="https://johnnjenga.vercel.app/">
+    <link rel="canonical" href="https://johnnjenga.vercel.app/">
+    <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%2064%2064'><rect width='64' height='64' rx='14' fill='%230B0F14'/><text x='32' y='41' font-family='JetBrains%20Mono,%20monospace' font-size='24' fill='%2334D399' text-anchor='middle' dominant-baseline='middle' font-weight='700'>JN</text></svg>" type="image/svg+xml">
 
-    <title>John Njenga - Full-stack Web Developer & IT Specialist</title>
+    <title>John Njenga -Full-stack Developer & Cloud Infrastructure</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Preload critical images -->
     <link rel="preload" href="assets/background.jpg" as="image">
     <link rel="preload" href="assets/logo.png" as="image">
     <link rel="preload" href="assets/john.jpg" as="image">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e9ee02fdb8.js" crossorigin="anonymous"></script>
 
     <!-- Vercel Web Analytics -->
@@ -37,15 +38,20 @@
         "@type": "Person",
         "name": "John Njenga",
         "jobTitle": "Full-stack Developer & IT Specialist",
-        "url": "https://johnnjenga-portfolio.com",
+        "url": "https://johnnjenga.vercel.app/",
         "sameAs": [
             "https://linkedin.com/in/john-njenga-318a24306",
             "https://github.com/JOHN-ITDEVELOPER"
         ],
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "KCA University"
+        },
         "address": {
             "@type": "PostalAddress",
             "addressCountry": "KE"
         },
+        "knowsAbout": ["Laravel", "PHP", "Cloud Infrastructure", "Cybersecurity", "MySQL", "Cloudflare", "Azure"],
         "email": "johnnjenga7852@gmail.com",
         "telephone": "+254757886522"
     }
@@ -56,18 +62,16 @@
     <header class="header">
         <nav class="navbar" role="navigation" aria-label="Main navigation">
             <div class="nav-container">
-                <div class="logo">
-                    <img src="assets/logo.png" alt="John Njenga Logo" class="logo-image" width="45" height="45" style="border-radius: 50%; margin-right: 5px;">
-                    <span class="logo-textq">John Njenga</span>
-                </div>
-                
-              
+                <a href="#home" class="logo">
+                    <span class="logo-prompt">jn<span class="logo-prompt-accent">@</span>portfolio<span class="logo-prompt-accent">:~$</span></span>
+                </a>
+
                 <ul class="nav-menu" id="navMenu" role="menubar">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#home" class="nav-link" data-path="~/">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-path="~/about">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-path="~/skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" data-path="~/projects">Projects</a></li>
+                    <li><a href="#contact" class="nav-link" data-path="~/contact">Contact</a></li>
                 </ul>
 
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
@@ -85,23 +89,45 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-image">
-                        <img src="assets/background.jpg" alt="John Njenga - Full-stack Web Developer" width="600" height="600" loading="eager" fetchpriority="high">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <span class="status-badge">
+                        <span class="status-dot status-live" aria-hidden="true"></span>
+                        Open to industrial attachments -Aug 2026
+                    </span>
+                    <h1>John Njenga<span class="cursor" aria-hidden="true">_</span></h1>
+                    <p class="tagline">Full-stack Developer · Cloud &amp; Security Focus</p>
+                    <p class="hero-description">Final-year IT student at KCA University shipping production systems for the Kenyan market -from a two-sided service marketplace to M-Pesa-integrated payroll infrastructure. I build the backend, own the deploy, and fix it when it breaks at 2am.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="assets/John_Njenga_CV.pdf" class="btn btn-secondary" download aria-label="Download John Njenga's CV">
+                            <i class="fas fa-arrow-down"></i> Download CV
+                        </a>
                     </div>
-                    <div class="hero-text">
-                        <h1>John Njenga</h1>
-                        <p class="tagline">Full-stack Developer • IT Specialist • Network & Cybersecurity Enthusiast</p>
-                        <p class="hero-description">I'm an IT student at KCA University building  systems, desktop utilities, and practical web apps focused on PHP/MySQL backends and secure, maintainable IT systems.</p>
-                        <div class="hero-cta">
-                            <a href="#" class="btn btn-primary coming-soon-link" download aria-label="Download John Njenga's CV" title="CV - Coming Soon">
-                                Download CV
-                            </a>
-                            <a href="#projects" class="btn btn-secondary" aria-label="View John's projects">
-                                View My Work
-                            </a>
+                    <dl class="hero-stats">
+                        <div class="hero-stat">
+                            <dt>8+</dt>
+                            <dd>Projects shipped</dd>
                         </div>
+                        <div class="hero-stat">
+                            <dt>83ms</dt>
+                            <dd>Avg TTFB · MtaaniFix</dd>
+                        </div>
+                        <div class="hero-stat">
+                            <dt>Soon</dt>
+                            <dd>Expected graduation</dd>
+                        </div>
+                    </dl>
+                </div>
+                <div class="hero-image">
+                    <div class="term-window">
+                        <div class="term-titlebar">
+                            <span class="term-dot term-dot-red"></span>
+                            <span class="term-dot term-dot-amber"></span>
+                            <span class="term-dot term-dot-green"></span>
+                            <span class="term-title">jn@nairobi:~$ whoami</span>
+                        </div>
+                        <img src="assets/background.jpg" alt="John Njenga - Full-stack Web Developer" width="600" height="600" loading="eager" fetchpriority="high">
                     </div>
                 </div>
             </div>
@@ -110,29 +136,30 @@
         <!-- About Section -->
         <section id="about" class="about">
             <div class="container">
-                <h2 class="section-title">About Me</h2>
+                <span class="path-eyebrow">~/about</span>
+                <h2 class="section-title">About</h2>
                 <div class="about-content">
                     <div class="about-image">
                         <img src="assets/john.jpg" alt="John Njenga" width="400" height="400" loading="eager">
-                        <div class="about-stats">
+                        <dl class="about-stats">
                             <div class="stat-item">
-                                <h4>7+</h4>
-                                <p>Projects Completed</p>
+                                <dt>8+</dt>
+                                <dd>Projects Shipped</dd>
                             </div>
                             <div class="stat-item">
-                                <h4>3+</h4>
-                                <p>Years Experience</p>
+                                <dt>83ms</dt>
+                                <dd>Avg. Response Time</dd>
                             </div>
                             <div class="stat-item">
-                                <h4>100%</h4>
-                                <p>Client Satisfaction</p>
+                                <dt>Nov '26</dt>
+                                <dd>Expected Graduation</dd>
                             </div>
-                        </div>
+                        </dl>
                     </div>
                     <article class="about-text">
-                        <h3>Passionate IT Student & Developer</h3>
-                        <p>I'm John Njenga, a dedicated IT student at KCA University with a passion for building practical, secure, and scalable digital solutions. I combine hands-on experience in full-stack development, IT systems design, and cybersecurity to create systems that solve real-world problems.</p>
-                        <p>My approach centers on writing maintainable code, implementing strong database designs, and prioritizing security across all layers of application development. I thrive in collaborative environments and am committed to continuous learning as technologies evolve.</p>
+                        <h3>Building infrastructure for the Kenyan market</h3>
+                        <p>I'm John Njenga, a final-year BSc Information Technology student at KCA University in Nairobi, graduating November 2026 as a Kenswed programme scholar. I design and ship full-stack systems end-to-end -architecture, backend, database, and the infrastructure that keeps them running.</p>
+                        <p>My current focus is <strong>MtaaniFix</strong>, a two-sided marketplace connecting clients with verified fundis (skilled tradespeople) across Kenya, which I built, deployed, and maintain solo as my final-year project. Alongside it I run <strong>SiteGred</strong>, a worker management and payroll platform for construction, agriculture, and events, and take on freelance security assessments and development work.</p>
                         <div class="about-highlights">
                             <div class="highlight-item">
                                 <i class="fas fa-check-circle"></i>
@@ -140,18 +167,18 @@
                             </div>
                             <div class="highlight-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Database Design & Optimization</span>
+                                <span>Cloud Infrastructure &amp; Deployment</span>
                             </div>
                             <div class="highlight-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Cybersecurity Best Practices</span>
+                                <span>Security Assessments &amp; Hardening</span>
                             </div>
                             <div class="highlight-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Responsive UI/UX Design</span>
+                                <span>M-Pesa / Daraja API Integration</span>
                             </div>
                         </div>
-                        <p class="about-location"><i class="fas fa-map-marker-alt"></i> <strong>Currently based in Kenya</strong> — Open to internships, freelance projects, and opportunities to contribute to meaningful IT initiatives.</p>
+                        <p class="about-location"><i class="fas fa-map-marker-alt"></i> <strong>Based in Nairobi, Kenya</strong> -actively seeking industrial attachment placements from August 2026 in software development, cloud/DevOps, networking, or IT support.</p>
                     </article>
                 </div>
             </div>
@@ -160,101 +187,97 @@
         <!-- Skills Section -->
         <section id="skills" class="skills">
             <div class="container">
-                <h2 class="section-title">Skills & Technologies</h2>
+                <span class="path-eyebrow">~/skills</span>
+                <h2 class="section-title">Skills &amp; Technologies</h2>
                 <div class="skills-grid">
                     <article class="skill-category">
-                        <h3>Languages</h3>
+                        <h3>Languages &amp; Databases</h3>
                         <ul class="skill-list">
-                            <li>
-                                <span class="skill-name">PHP</span>
-                                <div class="proficiency"><div class="bar" style="width: 85%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">PHP</span><span class="skill-level">Advanced</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span></div>
                             </li>
-                            <li>
-                                <span class="skill-name">Java</span>
-                                <div class="proficiency"><div class="bar" style="width: 80%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">SQL</span><span class="skill-level">Advanced</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span></div>
                             </li>
-                            <li>
-                                <span class="skill-name">JavaScript</span>
-                                <div class="proficiency"><div class="bar" style="width: 75%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">JavaScript</span><span class="skill-level">Proficient</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar"></span></div>
                             </li>
-                            <li>
-                                <span class="skill-name">TypeScript</span>
-                                <div class="proficiency"><div class="bar" style="width: 70%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">TypeScript</span><span class="skill-level">Proficient</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar"></span></div>
                             </li>
-                        
-                            <li>
-                                <span class="skill-name">SQL</span>
-                                <div class="proficiency"><div class="bar" style="width: 85%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">Java</span><span class="skill-level">Proficient</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar"></span></div>
                             </li>
                         </ul>
                     </article>
 
                     <article class="skill-category">
-                        <h3>Frameworks & Libraries</h3>
+                        <h3>Frameworks &amp; Libraries</h3>
                         <ul class="skill-list">
-                            <li>
-                                <span class="skill-name">Laravel</span>
-                                <div class="proficiency"><div class="bar" style="width: 90%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">Laravel</span><span class="skill-level">Advanced</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span></div>
                             </li>
-                            <li>
-                                <span class="skill-name">React</span>
-                                <div class="proficiency"><div class="bar" style="width: 72%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">Bootstrap</span><span class="skill-level">Advanced</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span></div>
                             </li>
-                            <li>
-                                <span class="skill-name">Bootstrap</span>
-                                <div class="proficiency"><div class="bar" style="width: 80%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">Flutter</span><span class="skill-level">Proficient</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar"></span></div>
                             </li>
-                            <li>
-                                <span class="skill-name">Chart.js</span>
-                                <div class="proficiency"><div class="bar" style="width: 75%"></div></div>
-                            </li>
-                            <li>
-                                <span class="skill-name">Swing (Java)</span>
-                                <div class="proficiency"><div class="bar" style="width: 78%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">React</span><span class="skill-level">Proficient</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar"></span></div>
                             </li>
                         </ul>
                     </article>
 
                     <article class="skill-category">
-                        <h3>Databases & Tools</h3>
+                        <h3>Cloud &amp; Infrastructure</h3>
                         <ul class="skill-list">
-                            <li>
-                                <span class="skill-name">MySQL</span>
-                                <div class="proficiency"><div class="bar" style="width: 85%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">Azure (App Service, MySQL Flexible Server)</span><span class="skill-level">Proficient</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar"></span></div>
                             </li>
-                            <li>
-                                <span class="skill-name">SQLite</span>
-                                <div class="proficiency"><div class="bar" style="width: 75%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">Cloudflare (CDN, WAF, DNS)</span><span class="skill-level">Proficient</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar"></span></div>
                             </li>
-                            <li>
-                                <span class="skill-name">XAMPP</span>
-                                <div class="proficiency"><div class="bar" style="width: 80%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">GitHub Actions CI/CD</span><span class="skill-level">Proficient</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar"></span></div>
                             </li>
-                            <li>
-                                <span class="skill-name">Git & GitHub</span>
-                                <div class="proficiency"><div class="bar" style="width: 75%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">M-Pesa / Daraja API</span><span class="skill-level">Proficient</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar"></span></div>
                             </li>
                         </ul>
                     </article>
 
                     <article class="skill-category">
-                        <h3>Networking & Security</h3>
+                        <h3>Security &amp; Networking</h3>
                         <ul class="skill-list">
-                            <li>
-                                <span class="skill-name">Network Architecture</span>
-                                <div class="proficiency"><div class="bar" style="width: 70%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">Network Architecture</span><span class="skill-level">Proficient</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar"></span></div>
                             </li>
-                            <li>
-                                <span class="skill-name">Encryption (AES)</span>
-                                <div class="proficiency"><div class="bar" style="width: 75%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">Security Assessments</span><span class="skill-level">Proficient</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar"></span></div>
                             </li>
-                            <li>
-                                <span class="skill-name">Data Security</span>
-                                <div class="proficiency"><div class="bar" style="width: 78%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">AES / Data Encryption</span><span class="skill-level">Proficient</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar"></span></div>
                             </li>
-                            <li>
-                                <span class="skill-name">LINUX</span>
-                                <div class="proficiency"><div class="bar" style="width: 65%"></div></div>
+                            <li class="skill-row">
+                                <div class="skill-row-head"><span class="skill-name">Linux</span><span class="skill-level">Proficient</span></div>
+                                <div class="signal-meter" aria-hidden="true"><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar"></span></div>
                             </li>
                         </ul>
                     </article>
@@ -265,156 +288,150 @@
         <!-- Projects Section -->
         <section id="projects" class="projects">
             <div class="container">
+                <span class="path-eyebrow">~/projects</span>
                 <h2 class="section-title">Featured Projects</h2>
                 <div class="projects-grid">
-                    <!-- Project 1: Kenswed -->
-                    <article class="project-card" data-project="kenswed">
+                    <!-- Project 1: MtaaniFix -->
+                    <article class="project-card" data-project="mtaanifix" tabindex="0" role="button" aria-label="View MtaaniFix project details">
                         <div class="project-image">
-                            <img src="assets/kenswed-dashboard.png" alt="Kenswed School Management System dashboard showing student data and results entry interface" loading="lazy">
-                            <div class="project-overlay">
-                                <button class="view-project-btn" aria-label="View Kenswed project details">View Project</button>
-                            </div>
+                            <img src="assets/mtaanifix.png" alt="MtaaniFix marketplace connecting clients to verified fundis in Kenya" loading="lazy">
                         </div>
                         <div class="project-info">
-                            <h3>Kenswed - School Management System</h3>
+                            <span class="status-line"><span class="status-dot status-live"></span>Live in production</span>
+                            <h3>MtaaniFix</h3>
+                            <p class="project-tech">Laravel • MySQL (Azure) • Cloudflare • Blade</p>
+                            <p class="project-desc">Two-sided marketplace connecting clients with verified fundis across Kenya. Deployed on Azure with a Cloudflare CDN/WAF layer, running at an 83ms average TTFB after backend optimization.</p>
+                            <div class="project-links">
+                                <a href="https://mtaanifix.tech" class="project-link live-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> Visit Live Site
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: SiteGred -->
+                    <article class="project-card" data-project="sitegred" tabindex="0" role="button" aria-label="View SiteGred project details">
+                        <div class="project-image">
+                            <img src="assets/sitegred.png" alt="SiteGred worker management and payroll platform dashboard" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <span class="status-line"><span class="status-dot status-dev"></span>Featured -KCA Tech Expo</span>
+                            <h3>SiteGred</h3>
+                            <p class="project-tech">Laravel • MySQL • M-Pesa Daraja API</p>
+                            <p class="project-desc">Worker management and payroll platform for construction, agriculture, and events -GPS/photo attendance, automated payroll, and M-Pesa B2C disbursements.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/JOHN-ITDEVELOPER" class="project-link github-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> GitHub Profile
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Kenswed -->
+                    <article class="project-card" data-project="kenswed" tabindex="0" role="button" aria-label="View Kenswed project details">
+                        <div class="project-image">
+                            <img src="assets/kenswed-dashboard.png" alt="Kenswed School Management System dashboard showing student data and results entry interface" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <span class="status-line"><span class="status-dot status-archived"></span>Academic project</span>
+                            <h3>Kenswed -School Management System</h3>
                             <p class="project-tech">PHP • MySQL • Bootstrap • Chart.js</p>
                             <p class="project-desc">Full web application for student registration, exams, live results entry, and report generation.</p>
                             <div class="project-links">
-                                <a href="#" class="project-link live-link"  rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i> View Live
+                                <a href="https://kssms.vercel.app" class="project-link live-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> Visit Live Site
                                 </a>
-                                <a href="#" class="project-link github-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                            </div>
-                        </div>
-                        
-                    </article>
 
-                    <!-- Project 2: MtaaniFix -->
-                    <article class="project-card" data-project="mtaanifix">
-                        <div class="project-image">
-                            <img src="assets/mtaanifix.png" alt="MtaaniFix marketplace prototype connecting clients to local tradespeople" loading="lazy">
-                            <div class="project-overlay">
-                                <button class="view-project-btn" aria-label="View MtaaniFix project details">View Project</button>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>MtaaniFix</h3>
-                            <p class="project-tech">Laravel • Blade • MySQL • Bootstrap</p>
-                            <p class="project-desc">Marketplace prototype connecting clients to local tradespeople (plumbers, electricians, etc.) for home services.</p>
-                            <div class="project-links">
-                                <a href="https://mtaanifix.tech" class="project-link live-link"  rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i> View Live
-                                </a>
-                                <a href="https://github.com/JOHN-ITDEVELOPER/" class="project-link github-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-github"></i> GitHub
+                                <a href="https://github.com/JOHN-ITDEVELOPER" class="project-link github-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> GitHub Profile
                                 </a>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Project 3: AI Attendance System -->
-                    <article class="project-card" data-project="ai-attendance">
+                    <!-- Project 4: AI Attendance System -->
+                    <article class="project-card hidden-project" data-project="ai-attendance" tabindex="0" role="button" aria-label="View AI Attendance System project details">
                         <div class="project-image">
                             <img src="assets/ai-attendance.png" alt="AI Attendance System using facial recognition technology" loading="lazy">
-                            <div class="project-overlay">
-                                <button class="view-project-btn" aria-label="View AI Attendance System project details">View Project</button>
-                            </div>
                         </div>
                         <div class="project-info">
+                            <span class="status-line"><span class="status-dot status-prototype"></span>Prototype</span>
                             <h3>AI Attendance System</h3>
                             <p class="project-tech">React • TypeScript • Facial Recognition API</p>
-                            <p class="project-desc">AI-powered attendance tracking system using facial recognition technology for automated student/employee check-ins.</p>
+                            <p class="project-desc">AI-powered attendance tracking system using facial recognition for automated student/employee check-ins.</p>
                             <div class="project-links">
-                                <a href="#" class="project-link live-link "  rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i> View Live
-                                </a>
                                 <a href="https://github.com/JOHN-ITDEVELOPER" class="project-link github-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-github"></i> GitHub
+                                    <i class="fab fa-github"></i> GitHub Profile
                                 </a>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Project 4: Password Manager -->
-                    <article class="project-card hidden-project" data-project="password-manager">
+                    <!-- Project 5: Password Manager -->
+                    <article class="project-card hidden-project" data-project="password-manager" tabindex="0" role="button" aria-label="View Password Manager project details">
                         <div class="project-image">
                             <img src="assets/password-manager.png" alt="Password Manager desktop application with credential storage and password generator interface" loading="lazy">
-                            <div class="project-overlay">
-                                <button class="view-project-btn" aria-label="View Password Manager project details">View Project</button>
-                            </div>
                         </div>
                         <div class="project-info">
+                            <span class="status-line"><span class="status-dot status-archived"></span>Desktop app</span>
                             <h3>Password Manager</h3>
                             <p class="project-tech">Java • Swing • AES Encryption</p>
-                            <p class="project-desc">Desktop application for storing encrypted credentials locally with add/edit/delete, password generator, and encrypted backups.</p>
+                            <p class="project-desc">Desktop application for storing encrypted credentials locally, with a password generator and encrypted backups.</p>
                             <div class="project-links">
-                                <a href="#" class="project-link live-link"  rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i> View Live
-                                </a>
                                 <a href="https://github.com/JOHN-ITDEVELOPER" class="project-link github-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-github"></i> GitHub
+                                    <i class="fab fa-github"></i> GitHub Profile
                                 </a>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Project 5: ATM System -->
-                    <article class="project-card hidden-project" data-project="atm">
+                    <!-- Project 6: ATM System -->
+                    <article class="project-card hidden-project" data-project="atm" tabindex="0" role="button" aria-label="View ATM System project details">
                         <div class="project-image">
                             <img src="assets/atm-system.png" alt="ATM System interface showing banking operations and transaction management" loading="lazy">
-                            <div class="project-overlay">
-                                <button class="view-project-btn" aria-label="View ATM System project details">View Project</button>
-                            </div>
                         </div>
                         <div class="project-info">
+                            <span class="status-line"><span class="status-dot status-archived"></span>Desktop app</span>
                             <h3>ATM System</h3>
                             <p class="project-tech">Visual Basic • SQLite • MS Access</p>
-                            <p class="project-desc">Desktop banking application for ATM operations including deposits, withdrawals, balance inquiry, and transaction history.</p>
+                            <p class="project-desc">Desktop banking application for deposits, withdrawals, balance inquiry, and transaction history.</p>
                             <div class="project-links">
-                                <a href="#" class="project-link live-link"  rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i> View Live
-                                </a>
                                 <a href="https://github.com/JOHN-ITDEVELOPER/AtmSystem_VB.NET" class="project-link github-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-github"></i> GitHub
+                                    <i class="fab fa-github"></i> View Repository
                                 </a>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Project 6: Speed Test -->
-                    <article class="project-card hidden-project" data-project="speedtest">
+                    <!-- Project 7: Speed Test -->
+                    <article class="project-card hidden-project" data-project="speedtest" tabindex="0" role="button" aria-label="View Speed Test project details">
                         <div class="project-image">
                             <img src="assets/speedtest.png" alt="Internet Speed Test application showing download and upload speeds" loading="lazy">
-                            <div class="project-overlay">
-                                <button class="view-project-btn" aria-label="View Speed Test project details">View Project</button>
-                            </div>
                         </div>
                         <div class="project-info">
+                            <span class="status-line"><span class="status-dot status-prototype"></span>Prototype</span>
                             <h3>Speed Test</h3>
                             <p class="project-tech">HTML • CSS • JavaScript</p>
                             <p class="project-desc">Web-based internet speed testing tool for measuring download/upload speeds and network latency.</p>
                             <div class="project-links">
-                                <a href="#" class="project-link live-link"  rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i> View Live
+                                <a href="https://netspeed-test.vercel.app/" class="project-link live-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> Visit Live Site
                                 </a>
+
                                 <a href="https://github.com/JOHN-ITDEVELOPER/Net_SpeedTest" class="project-link github-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-github"></i> GitHub
+                                    <i class="fab fa-github"></i> View Repository
                                 </a>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Project 7: Client Portfolio -->
-                    <article class="project-card hidden-project" data-project="client-portfolio">
+                    <!-- Project 8: Client Portfolio -->
+                    <article class="project-card hidden-project" data-project="client-portfolio" tabindex="0" role="button" aria-label="View Client Portfolio project details">
                         <div class="project-image">
                             <img src="assets/client-portfolio.png" alt="Client portfolio website with modern design and responsive layout" loading="lazy">
-                            <div class="project-overlay">
-                                <button class="view-project-btn" aria-label="View Client Portfolio project details">View Project</button>
-                            </div>
                         </div>
                         <div class="project-info">
+                            <span class="status-line"><span class="status-dot status-live"></span>Live -client project</span>
                             <h3>Client Portfolio Website</h3>
                             <p class="project-tech">HTML • CSS • JavaScript</p>
                             <p class="project-desc">Professional portfolio website built for a client with modern design, smooth animations, and responsive layout.</p>
@@ -423,7 +440,7 @@
                                     <i class="fas fa-external-link-alt"></i> View Live
                                 </a>
                                 <a href="https://github.com/JOHN-ITDEVELOPER/Evelyn_Portfolio" class="project-link github-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-github"></i> GitHub
+                                    <i class="fab fa-github"></i> View Repository
                                 </a>
                             </div>
                         </div>
@@ -440,6 +457,7 @@
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
+                <span class="path-eyebrow">~/contact</span>
                 <h2 class="section-title">Get in Touch</h2>
                 <div class="contact-content">
                     <article class="contact-info">
@@ -511,7 +529,6 @@
                 </a>
             </div>
             <p>&copy; 2026 John Njenga. All rights reserved. ❤️</p>
-           
         </div>
     </footer>
 
@@ -530,13 +547,13 @@
                 <div class="modal-details">
                     <h3>Overview</h3>
                     <p id="modalDescription"></p>
-                    
+
                     <h3>Technology Stack</h3>
                     <p id="modalTech"></p>
-                    
+
                     <h3>My Role</h3>
                     <p id="modalRole"></p>
-                    
+
                     <h3>Links</h3>
                     <div id="modalLinks" class="modal-links"></div>
                 </div>
@@ -547,7 +564,3 @@
     <script src="index.js"></script>
 </body>
 </html>
-
-
-
-
